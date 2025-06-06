@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>site!</title>
+  <style>
+    body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          text-align: center;
+          background: #1d0024;
+    background: linear-gradient(to right, rgba(29, 0, 36, 1) 0%, rgba(92, 5, 135, 1) 35%, rgba(136, 6, 201, 1) 64%, rgba(183, 0, 255, 1) 100%);
+ }  
+   .neon{
+     text-shadow: 0 0 10px #fff;
+      font-weight: bold;
+      color: white;
+      padding: 20px;
+      font-size: 37px;
+   }
+
+    .espaco-vazio {
+      height: 40px;
+    }
+
+    #contador {
+      color: #fff;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      text-shadow: 0 0 10px #fff;
+    }
+
+    #slideshow {
+      max-width: 300px;
+      margin: 20px auto;
+      cursor: pointer;
+    }
+
+    .slide {
+      display: none;
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .texto-abaixo {
+      color: #fff;
+      padding: 20px;
+      font-size: 24px;
+    }
+    
+    .amor {
+      font-weight: bold;
+      color: RED;
+      padding: 20px;
+      font-size: 37px;
+    }
+    .escolher{
+      color: #fff;
+      padding: 10px;
+      font-size: 26px;
+      text-shadow: 0 0 10px #fff;
+    }
+.opcoes {
+    display: flex;
+    gap: 20px;
+}
+
+label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #f4f4f4; 
+    transition: color 0.3s;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0; 
+} 
+
+
+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid white; /* Cor da borda */
+    border-radius: 50%; /* Formato circular */
+    background-color: #2c2c2c; /* Cor de fundo igual ao corpo */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Estilo quando o botão de opção está selecionado */
+input[type="radio"]:checked + label:before {
+    background-color: RED; /* Cor de fundo ao selecionar */
+    border-color: white; /* Cor da borda ao selecionar */
+}
+
+/* Mudança de cor do texto ao passar o mouse */
+label:hover {
+    color: RED; /* Cor do texto ao passar o mouse */
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="espaco-vazio"></div>
+  <div class="neon" >
+     TE AMO MEU AMOR
+  </div>
+
+  <div class="slideshow" id="slideshow">
+    <img src="BRINCA.jpg" class="slide active" alt="Imagem 1">
+    <img src="REDE.jpg" class="slide" alt="Imagem 2">
+    <video src="Linda.mp4" class="slide" muted autoplay loop></video>
+    <video src="Lindos.mp4" class="slide" muted autoplay loop></video>
+    <video src="Fer.mp4" class="slide" muted autoplay loop></video>
+    <video src="Fernanda.mp4" class="slide" muted autoplay loop></video>
+  </div>
+  <div class="texto-abaixo">
+  <div id="contador">Carregando tempo...</div>
+   <div class="espaco-vazio"></div>
+  <div class="texto-abaixo">
+ <p>Amor da minha vida obrigado por esse tempo juntos só tenho a te agradecer e quero que tenha muitos amis tempo ao seu lado. </p>
+   
+  <p>obrigado  por todos os ensinamentos por cada rela mais que valeu a pena obrigado por ser essa pessoa especial na minha vida que mudou ela e que me feiz enchegar o mundo de outra forma com mais amor e carinho.</p>
+   
+  <p> e que faiz eu ver que eu posso sim mudar meu jeito de ser o modo que sou mais no fundo vc sempre vai tira um sorriso meu e sempre vai tá ali para me auxiliar nos momentos mais difíceis e nos mais fáceis.</p>
+   
+ <p>  E sempre vai esta ao meu lado quero que vc saiba o amor que sinto por vc Com seu jeito de ser me apaixonei e sempre me sinto apaixonado nos seus olhos nos seus sorrisos mais que isso vc e uma pessoa incrível que sabe como deixa eu sem jeito e mudar meu ânimos e sempre me deixando feliz.</p>
+    
+  quero que vc fique bem ao meu lado tem hora que nos nn se entendi mais nos tenta né ksksk já que não sou tanto romântico vc me ensinar a ser e sempre te amar do jeito certo sempre me ensinando a ser vaidoso e cuidando não só de ti mais sim de mim também te amo e sempre quero esta ao seu lado bjs conte sempre com eu obg por mais 1 mês e obg por ser essa namorada incrível, especial e gostosa que eu amo🥰🥰 
+  </div>
+<fron>
+  <div class="escolher">
+    Vamos Tomar Soverte Dia 12
+  </div>
+  <div>
+ <label>
+ <input type="radio" name="escolha" value="sim">
+ [ SIM TODA HORA ]
+ </label>
+ <label>
+  <input type="radio" name="escolha" value="NÃO">
+  [ SIM SEMPRE ]
+ </label>
+  </div>
+  <input type="submit" value="Melhor Escolha Da Sua Vida">
+ 
+</fron>
+<script>
+  function atualizarContador() {
+    const inicio = new Date(2022, 10, 5); 
+    const agora = new Date();
+    const diff = agora - inicio;
+
+const anos = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+const meses = Math.floor((diff % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30)); 
+const dias = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60 * 24)) % 30; 
+const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+const minutos = Math.floor((diff / (1000 * 60)) % 60);
+const segundos = Math.floor((diff / 1000) % 60);
+
+document.getElementById("contador").innerText =
+  `${anos} anos, ${meses} meses, ${dias} dias, ${horas} horas, ${minutos} minutos, ${segundos} segundos
+  Nosso Tempo Juntos ❤️‍🔥`;
+  }
+
+
+  setInterval(atualizarContador, 1000);
+  atualizarContador();
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = 'none';
+        slide.classList.remove('active');
+        if (slide.tagName === 'VIDEO') slide.pause();
+      });
+
+      const currentSlide = slides[index];
+      currentSlide.style.display = 'block';
+      currentSlide.classList.add('active');
+      if (currentSlide.tagName === 'VIDEO') currentSlide.play();
+    }
+
+    showSlide(current);
+
+    document.getElementById('slideshow').addEventListener('click', () => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    });
+  });
+
+  const gerarCoracao = () => {
+    console.log('Gerando coração'); // Adicione este log
+    const coracao = document.createElement('div');
+    coracao.classList.add('coracao');
+    const posX = Math.random() * window.innerWidth;
+    coracao.style.left = `${posX}px`;
+    document.body.appendChild(coracao);
+    setTimeout(() => {
+        coracao.remove();
+    }, 5000);
+};
+
+
+  setInterval(gerarCoracao, 500);
+</script>
+
+
+</body>
+</html>
